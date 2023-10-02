@@ -1,0 +1,157 @@
+body {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 750px;
+}
+
+.document-title {
+  text-align: left;
+  width: 100%;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  border-bottom: 1px solid lightgrey;
+  width: 100%;
+}
+.header-description {
+  max-width: 400px;
+  font-style: oblique;
+  font-size: 1.1rem;
+}
+.contacts {
+  width: 60%;
+  padding: 0;
+  margin: 10px auto 0 10px;
+}
+.contact__key {
+  font-size: 1.2rem;
+  color: gray;
+  font-style: italic;
+  padding-bottom: 5px;
+}
+.contact__value {
+  font-size: 1.2rem;
+}
+.skills,
+.technologies,
+.pet-projects,
+.educational-projects,
+.education,
+.places-of-work,
+.footer {
+  border-top: 1px solid lightgrey;
+  width: 100%;
+}
+.skills__title,
+.technologies__title,
+.pet-projects__title,
+.educational-projects__title,
+.education__title,
+.places-of-work__title {
+  font-size: 1.5rem;
+}
+.skills__description,
+.technologies__description,
+.pet-projects__item,
+.educational-projects__item,
+.educational-projects__item,
+.places-of-work-projects__item,
+.footer__copyright,
+.footer__date {
+  font-size: 1.1rem;
+}
+.pet-projects__content,
+.educational-projects__content,
+.education__content,
+.places-of-work__content {
+  padding-left: 15px;
+}
+.pet-projects__item-link,
+.educational-projects__item-link {
+  color: #ed375b;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media screen and (max-width: 800px) {
+  body {
+    max-width: 550px;
+  }
+}
+@media screen and (max-width: 600px) {
+  body {
+    max-width: 350px;
+  }
+  .document-title {
+    text-align: center;
+  }
+  header {
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+  }
+
+  .header-title,
+  .header-description,
+  .skills__title,
+  .technologies__title,
+  .pet-projects__title,
+  .educational-projects__title,
+  .education__title,
+  .places-of-work__title,
+  .skills__description,
+  .technologies__description,
+  .pet-projects__item,
+  .educational-projects__item,
+  .educational-projects__item,
+  .places-of-work-projects__item,
+  .footer__copyright,
+  .footer__date {
+    text-align: center;
+  }
+  .contacts {
+    width: 80%;
+    padding: 0;
+    margin: 10px auto 0 auto;
+  }
+   {
+  }
+}
+@media screen and (max-width: 400px) {
+  body {
+    max-width: 250px;
+  }
+  .document-title {
+    font-size: 1.5rem;
+  }
+  .header-title,
+  .header-description,
+  .skills__title,
+  .technologies__title,
+  .pet-projects__title,
+  .educational-projects__title,
+  .education__title,
+  .places-of-work__title,
+  .skills__description,
+  .technologies__description,
+  .pet-projects__item,
+  .educational-projects__item,
+  .educational-projects__item,
+  .places-of-work-projects__item,
+  .footer__copyright,
+  .footer__date,
+  .contact__value,
+  .contact__key {
+    font-size: 1.1rem;
+  }
+}
